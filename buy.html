@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 250px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #666;
+}
+
+.cart-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.cart-color-options {
+    display: flex;
+    gap: 5px;
+}
+
+.cart-color-options span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.color-beige {
+    background-color: #e6d8c9;
+}
+
+.color-blue {
+    background-color: #b0bec5;
+}
+
+.color-gray {
+    background-color: #ccc;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.cart-footer button {
+    background-color: #7d63f3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+.cart-footer button:hover {
+    background-color: #6a54db;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 15px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cart-item-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .cart-item-price,
+    .cart-item-details h3,
+    .cart-item-details p {
+        font-size: 18px;
+    }
+
+    .cart-footer button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-container {
+        font-size: 40px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .cart-item-details h3 {
+        font-size: 22px;
+    }
+
+    .cart-item-details p {
+        font-size: 16px;
+    }
+
+    .cart-item-price {
+        font-size: 16px;
+    }
+
+    .cart-item-quantity input {
+        width: 30px;
+        font-size: 18px;
+    }
+
+    .cart-footer button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="cart-container">
+        <h2>Cart</h2>
+
+        <div class="cart-item">
+            <img src="./Image/PDP Image a.png" alt="Luxe Armchair">
+            <div class="cart-item-details">
+                <h3>Luxe Armchair - Left Arm Chute</h3>
+                <p>Ultra-functional and elegantly minimalist, our Luxe Armchair Collection draws inspiration.</p>
+                <div class="cart-color-options">
+                    <span class="color-beige"></span>
+                    <span class="color-blue"></span>
+                    <span class="color-gray"></span>
+                </div>
+            </div>
+            <div class="cart-item-price">$899.00</div>
+            <div class="cart-item-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="./Image/pdp.png" alt="Round Terra Marble Table">
+            <div class="cart-item-details">
+                <h3>Round Terra Marble Center Table</h3>
+                <p>Let's take a look at how Japanese and Scandinavian styles combine to create beauty.</p>
+                <div class="cart-color-options">
+                    <span class="color-beige"></span>
+                    <span class="color-blue"></span>
+                    <span class="color-gray"></span>
+                </div>
+            </div>
+            <div class="cart-item-price">$369.00</div>
+            <div class="cart-item-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <a href="./checkout.html"><button>Next</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .forgot-password-container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .forgot-password-container img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.5rem;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #5a4bcf;
+        }
+        .back-to-login {
+            font-size: 1rem;
+        }
+        .back-to-login a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+        
+        /* Responsive Design */
+        @media(max-width: 480px) {
+            .forgot-password-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-password-container">
+        <img src="./Image/Squircle (2).png" alt="Forgot Password Image">
+        <h2>Forgot password</h2>
+        <p>Enter your email and we'll send a link to reset your password</p>
+        <input type="email" placeholder="Email" required>
+        <button class="btn">Reset password</button>
+        
+        <p class="back-to-login">Remember your password? <a href="login.html">Back to login</a></p>
+    </div>
+</body>
+</html>
